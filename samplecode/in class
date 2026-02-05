@@ -1,0 +1,534 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "num1 = 5\n",
+    "num2 = 7\n",
+    "a = \"Hello\"\n",
+    "b = True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(num2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(num1))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n",
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(num1)\n",
+    "print(num2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "numIn = input(\"Enter a number: \")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(numIn)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(numIn))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<built-in method read of _io.TextIOWrapper object at 0x7f2c1c4cfee0>\n"
+     ]
+    }
+   ],
+   "source": [
+    "myfile = open(\"TesterFile.dat\",\"w\")\n",
+    "myfile.write(numIn)\n",
+    "myfile.write(\"Hello World\")\n",
+    "myfile.close()\n",
+    "content = myfile.read\n",
+    "print(content)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 2\n",
+    "b = 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b>a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a>b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a==b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b!=a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b!=a and a<b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b==a or a>b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unexpected indent (<ipython-input-39-955aaf64ca7e>, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-39-955aaf64ca7e>\"\u001b[0;36m, line \u001b[0;32m3\u001b[0m\n\u001b[0;31m    else:\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m unexpected indent\n"
+     ]
+    }
+   ],
+   "source": [
+    "if(a>b):print(\"a is greater than b\")\n",
+    "if(b>a):print(\"b is greater than a\")\n",
+    "    else:\n",
+    "        print(\"a is neither\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "b is less than a\n",
+      "10\n",
+      "b is greater than a\n",
+      "10\n",
+      "b is less than a\n",
+      "11\n",
+      "b is greater than a\n",
+      "11\n",
+      "b is less than a\n",
+      "12\n",
+      "b is greater than a\n",
+      "12\n",
+      "b is less than a\n",
+      "13\n",
+      "b is greater than a\n",
+      "13\n",
+      "b is less than a\n",
+      "14\n",
+      "b is greater than a\n",
+      "14\n"
+     ]
+    }
+   ],
+   "source": [
+    "for x in range (0, 10):\n",
+    "    if (b<a):\n",
+    "        print(\"b is greater than a\")\n",
+    "        b = b+1\n",
+    "        print(b)\n",
+    "    else: \n",
+    "        print(\"b is less than a\")\n",
+    "        a = a+1\n",
+    "        print(a)\n",
+    "    else: \n",
+    "        print(\"they are equal\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "mylist = [\"Lily Perkins\", \"lap4253\", 19, \"Macon, Georgia\", \"Celina, TX\"]\n",
+    "for t in mylist:\n",
+    "print(t, type(t))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Lily Perkins <class 'str'>\n",
+      "lap4253 <class 'str'>\n",
+      "19 <class 'int'>\n",
+      "Macon, Georgia <class 'str'>\n",
+      "Celina, TX <class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "for t in mylist:\n",
+    "    print(t, type(t))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math\n",
+    "\n",
+    "def calc_hyp(a,b):\n",
+    "    h = math.sqrt(a*a + b*b)\n",
+    "    return h"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_h = calc_hyp(3, 4)\n",
+    "print(my_h)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import random\n",
+    "import math\n",
+    "\n",
+    "def approximatePi(numSamples):\n",
+    "    counter = 0\n",
+    "    totalCount = 0\n",
+    "\n",
+    "    for s in range (0, int(numSamples)):\n",
+    "        randomX = random.uniform(-1,1)\n",
+    "        randomY = random.uniform(-1,1)\n",
+    "        \n",
+    "        if (math.sqrt(randomX*randomX + randomY*randomY) < 1): ##if radius is less than one, count it\n",
+    "            counter = counter + 1\n",
+    "            \n",
+    "        totalCount = totalCount + 1 ##count total samples\n",
+    "        \n",
+    "    estPi = 100 * (counter/totalCount)\n",
+    "    \n",
+    "    return estPi;\n",
+    "        \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "how many samples200000\n"
+     ]
+    }
+   ],
+   "source": [
+    "numSamples = input(\"how many samples\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Pi = approximatePi(numSamples)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.784085\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (Pi)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "how many samples200000\n",
+      "3.13382\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "import math\n",
+    "\n",
+    "def approximatePi(numSamples):\n",
+    "    counter = 0\n",
+    "    totalCount = 0\n",
+    "\n",
+    "    for s in range (0, int(numSamples)):\n",
+    "        randomX = random.uniform(-1,1)\n",
+    "        randomY = random.uniform(-1,1)\n",
+    "        \n",
+    "        if (math.sqrt(randomX*randomX + randomY*randomY) < 1): ##if radius is less than one, count it\n",
+    "            counter = counter + 1\n",
+    "            \n",
+    "        totalCount = totalCount + 1 ##count total samples\n",
+    "        \n",
+    "    estPi = 4 * (counter/totalCount)\n",
+    "    \n",
+    "    return estPi;\n",
+    "\n",
+    "\n",
+    "numSamples = input(\"how many samples\")\n",
+    "\n",
+    "Pi = approximatePi(numSamples)\n",
+    "\n",
+    "print (Pi)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import matplotlib.pyplot as plt\n",
+    "import numpy as np"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
